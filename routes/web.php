@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::get('/livros', 'App\Http\Controllers\BookController@index');
 Route::get('/livros/adicionar', 'App\Http\Controllers\BookController@create');
+Route::post('/livros/adicionar', 'App\Http\Controllers\BookController@store');
