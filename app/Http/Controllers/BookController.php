@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Book;
+use App\Http\Requests\BooksFormRequest;
 use Illuminate\Http\Request;
 
 class BookController extends Controller
@@ -25,7 +26,7 @@ class BookController extends Controller
         return view('books.create');
     }
 
-    public function store(Request $request)
+    public function store(BooksFormRequest $request)
     {
         $nome = $request->get('titulo');
         $img = $request->get('img');
