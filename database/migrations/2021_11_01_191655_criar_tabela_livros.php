@@ -17,6 +17,8 @@ class CriarTabelaLivros extends Migration
             $table->id();
             $table->string('nome');
             $table->string('img');
+            $table->string('autor');
+            $table->string('ano');
             $table->string('sinopse');
         });
     }

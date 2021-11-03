@@ -14,6 +14,16 @@
             </div>
             @csrf
             <div class="mb-3">
+                <label for="autor" class="form-label">Autor</label>
+                <input type="text" class="form-control" name="autor" id="autor" placeholder="Ivan Turguêniev">
+            </div>
+            @csrf
+            <div class="mb-3">
+                <label for="ano" class="form-label">Ano</label>
+                <input type="text" class="form-control" name="ano" id="ano" placeholder="1883">
+            </div>
+            @csrf
+            <div class="mb-3">
                 <label for="img" class="form-label">Imagem</label>
                 <input type="url" class="form-control" name="img" id="img" placeholder="https://images-na.ssl-images-amazon.com/images/I/91eXvRufnFL.jpg">
             </div>
