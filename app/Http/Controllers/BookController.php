@@ -28,6 +28,15 @@ class BookController extends Controller
 
     public function store(BooksFormRequest $request)
     {
+
+        $request->validate([
+            'titulo' => 'required|max:255',
+            'img' => 'required',
+            'autor' => 'required',
+            'ano' => 'required',
+            'sinopse' => 'required',
+        ]);
+
         $nome = $request->get('titulo');
         $img = $request->get('img');
         $autor = $request->get('autor');
